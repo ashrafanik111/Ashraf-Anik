@@ -83,7 +83,7 @@ export default defineConfig({
       ],
     },
   },
-  base : "Ashraf-Anik",
+  base : "/Ashraf-Anik/",
 })
 
 

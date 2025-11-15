@@ -95,23 +95,7 @@ const Contact = ({ darkMode }) => {
             </div>
           </motion.div>
 
-          <motion.div className="order-1 lg:order-2 flex justify-center" variants={itemVariants}>
-            <div className="relative w-64 h-64">
-              <div className={`absolute top-0 right-0 w-16 h-16 rounded-full ${darkMode ? "bg-gray-700" : "bg-gray-200"} opacity-30`} />
-              <div className={`absolute bottom-0 left-0 w-24 h-24 rounded-full ${darkMode ? "bg-gray-700" : "bg-gray-200"} opacity-30`} />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div
-                  className={`w-48 h-48 border-4 rounded-lg relative flex items-center justify-center ${
-                    darkMode ? "border-gray-700" : "border-gray-300"
-                  }`}
-                >
-                  <div className={`absolute top-0 right-0 w-4 h-4 rounded-full ${darkMode ? "bg-gray-700" : "bg-gray-200"}`} />
-                  <div className={`absolute bottom-0 left-0 w-4 h-4 rounded-full ${darkMode ? "bg-gray-700" : "bg-gray-200"}`} />
-                  <div className={`w-32 h-24 ${darkMode ? "bg-gray-800" : "bg-gray-200"} clip-path-message`} />
-                </div>
-              </div>
-            </div>
-          </motion.div>
+          
         </motion.div>
 
         <motion.div className="text-center mt-16" variants={itemVariants}>

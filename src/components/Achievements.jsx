@@ -68,7 +68,7 @@ const Achievements = ({ darkMode }) => {
           }`}
           variants={itemVariants}
         >
-          <span>Achievements</span>
+          <span>Co Curricular Activities</span>
           <Trophy className={`ml-2 ${darkMode ? "text-gray-400" : "text-gray-600"}`} size={32} />
         </motion.h2>
         <motion.p

@@ -24,7 +24,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   useEffect(() => {
     const onScroll = () => {
       const scrollPos = window.scrollY + 100;
-      const sections = ["home", "skills", "education", "experiences", "achievements", "projects", "contact"];
+      const sections = ["home", "skills", "education", "achievements", "projects", "contact"];
       for (let i = sections.length - 1; i >= 0; i--) {
         const sec = document.getElementById(sections[i]);
         if (sec && sec.offsetTop <= scrollPos) {
@@ -42,7 +42,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
         <a href="#home" onClick={() => scrollTo("home")} className="flex items-center">
-          <img src={darkMode ? AminWhite : AminBlack} alt="Logo" className="h-10 w-auto" />
+          <img src={darkMode ? "" :"" } alt="Logo" className="h-10 w-auto" />
         </a>
 
         {/* Desktop Nav */}
@@ -69,26 +69,12 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               : darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-black"}`}
           >Education</a>
           <a
-            href="#experiences"
-            onClick={() => scrollTo("experiences")}
-            className={`text-sm font-medium transition-colors ${activeSection === "experiences"
-              ? darkMode ? "text-white" : "text-black"
-              : darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-black"}`}
-          >Experiences</a>
-          <a
             href="#achievements"
             onClick={() => scrollTo("achievements")}
             className={`text-sm font-medium transition-colors ${activeSection === "achievements"
               ? darkMode ? "text-white" : "text-black"
               : darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-black"}`}
           >Achievements</a>
-          <a
-            href="#projects"
-            onClick={() => scrollTo("projects")}
-            className={`text-sm font-medium transition-colors ${activeSection === "projects"
-              ? darkMode ? "text-white" : "text-black"
-              : darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-black"}`}
-          >Projects</a>
           <a
             href="#contact"
             onClick={() => scrollTo("contact")}
@@ -120,9 +106,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <a href="#home" onClick={() => scrollTo("home")} className="py-2 text-sm font-medium">Home</a>
             <a href="#skills" onClick={() => scrollTo("skills")} className="py-2 text-sm font-medium">Skills</a>
             <a href="#education" onClick={() => scrollTo("education")} className="py-2 text-sm font-medium">Education</a>
-            <a href="#experiences" onClick={() => scrollTo("experiences")} className="py-2 text-sm font-medium">Experiences</a>
             <a href="#achievements" onClick={() => scrollTo("achievements")} className="py-2 text-sm font-medium">Achievements</a>
-            <a href="#projects" onClick={() => scrollTo("projects")} className="py-2 text-sm font-medium">Projects</a>
             <a href="#contact" onClick={() => scrollTo("contact")} className="py-2 text-sm font-medium">Contact</a>
 
             <div className="pt-4 flex items-center">

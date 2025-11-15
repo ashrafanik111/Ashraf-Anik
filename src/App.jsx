@@ -58,9 +58,6 @@ function App() {
           <Achievements darkMode={darkMode} />
         </div>
         <div className="reveal">
-          <Projects darkMode={darkMode} />
-        </div>
-        <div className="reveal">
           <Contact darkMode={darkMode} />
         </div>
       </main>
