@@ -74,7 +74,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             className={`text-sm font-medium transition-colors ${activeSection === "achievements"
               ? darkMode ? "text-white" : "text-black"
               : darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-black"}`}
-          >Achievements</a>
+          >Co-Curricular</a>
           <a
             href="#contact"
             onClick={() => scrollTo("contact")}
