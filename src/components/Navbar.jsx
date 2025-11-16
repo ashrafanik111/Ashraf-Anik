@@ -106,7 +106,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <a href="#home" onClick={() => scrollTo("home")} className="py-2 text-sm font-medium">Home</a>
             <a href="#skills" onClick={() => scrollTo("skills")} className="py-2 text-sm font-medium">Skills</a>
             <a href="#education" onClick={() => scrollTo("education")} className="py-2 text-sm font-medium">Education</a>
-            <a href="#achievements" onClick={() => scrollTo("achievements")} className="py-2 text-sm font-medium">Achievements</a>
+            <a href="#achievements" onClick={() => scrollTo("achievements")} className="py-2 text-sm font-medium">Co-curricular</a>
             <a href="#contact" onClick={() => scrollTo("contact")} className="py-2 text-sm font-medium">Contact</a>
 
             <div className="pt-4 flex items-center">
